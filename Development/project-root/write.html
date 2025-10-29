@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>리뷰 작성 - GameLog</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1>리뷰 작성하기</h1>
+  <form id="reviewForm">
+    <label>게임명: <input type="text" id="gameName" required></label><br>
+    <label>작성자: <input type="text" id="author" required></label><br>
+    <label>평점: <input type="number" id="rating" min="0" max="100" required></label><br>
+    <label>후기:<br><textarea id="content" rows="5" required></textarea></label><br>
+    <button type="submit">저장</button>
+  </form>
+
+  <script src="js/write.js"></script>
+</body>
+</html>
